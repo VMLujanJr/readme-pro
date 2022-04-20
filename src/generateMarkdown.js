@@ -17,7 +17,7 @@ function generateMarkdown(data) {
   // ..or is it object?
   /* const {title, description, github, installation, usage, contributing, tests} = data; */
 
-  return `#
+  return `
     # ${title}
     
     ## Description
