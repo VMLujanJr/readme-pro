@@ -1,57 +1,59 @@
-# Forecaster
-![random weather icons](./assets/images/mock-up.gif)
-## Welcome
-
-Thank you for taking the time to review Forecaster, a weather application!
+ ![MIT](https://img.shields.io/badge/License-MIT-blue)
+# Readme-PRO
 
 ## Description
 
-[forecaster](https://github.com/VMLujanJr/forecaster) allows you to search for a city and display the current weather in real-time.
+Welcome to the Readme-PRO project!
 
-You may also visit the [website](https://vmlujanjr.github.io/forecaster/) to try it out for yourself!
+The application generates a customized .md file called 'README.md'.
+
+You may visit the deployed [website](https://VMLujanJr.github.io/readme-pro/) to try it out for yourself!
 
 ## Table of Contents
 
-- [Forecaster](#forecaster)
-  - [Welcome](#welcome)
+- [Readme-PRO](#readme-pro)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
+  - [Technologies](#technologies)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
-    - [**Additional Criteria**](#additional-criteria)
-    - [**MOCK UP**](#mock-up)
-  - [Languages](#languages)
+    - [Additional Criteria](#additional-criteria)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credit](#credit)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
   - [License](#license)
 
+## Technologies
+JavaScript, Node.js
+
 ## User Story
-```
+~~~
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
-```
+~~~
 
 ## Acceptance Criteria
 
 GIVEN a command-line application that accepts user input
 - [ ] WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-- [ ] WHEN I enter my project title
+- [x] WHEN I enter my project title
 THEN this is displayed as the title of the README
-- [ ] WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+- [x] WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 - [ ] WHEN I choose a license for my application from a list of options
 THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-- [ ] WHEN I enter my GitHub username
+- [x] WHEN I enter my GitHub username
 THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-- [ ] WHEN I enter my email address
+- [x] WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-- [ ] WHEN I click on the links in the Table of Contents
+- [x] WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
-### **Additional Criteria**
+### Additional Criteria
 
 **Deliverables: 20%**
 
@@ -68,46 +70,48 @@ THEN I am taken to the corresponding section of the README
 **Technical Acceptance: 40%**
 
 - [ ] Satisfies all of the above acceptance criteria plus the following:
-- [ ] Uses the [inquierer package](https://www.npmjs.com/package/inquirer)
+- [x] Uses the [inquierer package](https://www.npmjs.com/package/inquirer)
 
 **Repository Quality: 13%**
 
-- [ ] Repository has a unique name
+- [x] Repository has a unique name
 - [ ] Repository follows best practices for file structure and naming conventions
 - [ ] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 - [ ] Repository contains multiple descriptive commit messages
 - [ ] Repository contains quality README.md with description and a link to walkthrough video
 
-### **MOCK UP**
-
-![a mock-up of](./assets/images/)
-
-## Languages
-
-A list of languages used for this project:
-
-- JavaScript
-
 ## Installation
 
-```
-(Work in progress...)
-```
+Please download the repository from GitHub. You need VSCode installed and some basic Git knowledge on how to clone a repository.
 
 ## Usage
 
-```
-(Work in progress...)
-```
+To use the application you must type 'node index' on the command-line to initate the application. You will be prompted for answers.
 
-## Credit
+## Contributing
 
-- [VMLujanJr](https://github.com/VMLujanJr)
+Please use the contact information below for further instructions.
+
+## Tests
+
+Type 'node index' on the command-line, and follow the prompts.
+
+## Questions
+
+If you have any questions, you may direct them to VMLujanJr using the following links:
+
+| Contact | Description |
+| --- | --- |
+| Name | Victor |
+| Occupation | Developer |
+| E-mail | <vmlujanjr@outlook.com> |
+| GitHub | <https://github.com/VMLujanJr/> |
 
 ## License
+
 MIT License
 
-Copyright (c) 2022 VMLujanJr
+Copyright (c) 2022 Victor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
