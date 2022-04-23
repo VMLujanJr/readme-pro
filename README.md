@@ -57,8 +57,8 @@ THEN I am taken to the corresponding section of the README
 
 **Deliverables: 20%**
 
-- [ ] A sample README generated using the application must be submitted
-- [ ] Your GitHub repository containing your application code
+- [x] A sample README generated using the application must be submitted
+- [x] Your GitHub repository containing your application code
 
 **Walkthrough Video: 27%**
 
@@ -69,15 +69,15 @@ THEN I am taken to the corresponding section of the README
 
 **Technical Acceptance: 40%**
 
-- [ ] Satisfies all of the above acceptance criteria plus the following:
+- [x] Satisfies all of the above acceptance criteria plus the following:
 - [x] Uses the [inquierer package](https://www.npmjs.com/package/inquirer)
 
 **Repository Quality: 13%**
 
 - [x] Repository has a unique name
-- [ ] Repository follows best practices for file structure and naming conventions
-- [ ] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-- [ ] Repository contains multiple descriptive commit messages
+- [x] Repository follows best practices for file structure and naming conventions
+- [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- [x] Repository contains multiple descriptive commit messages
 - [ ] Repository contains quality README.md with description and a link to walkthrough video
 
 ## Installation

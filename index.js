@@ -132,7 +132,7 @@ Project Information
                         return false;
                     }
                 }),
-                choices: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js'],
+                choices: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js', 'Markdown'],
                 validate: response => {
                     if (response.length < 1) {
                         return 'Please choose at least one technology ❗';
