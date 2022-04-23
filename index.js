@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// include required packages / modules
 const fs = require('fs'); // include File System
 const inquirer = require('inquirer'); // include inquirer
 const generateMarkdown = require('./src/md-template'); // include md-template
 
-// TODO: Create an array of questions for user input
-/* const promptUserInfo = () => {
+// prompt user for information
+const promptUserInfo = () => {
     console.log(`
 ================
 User Information
@@ -22,6 +22,20 @@ User Information
                     }
                     else {
                         console.log('Please include a name ❗');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'occupation',
+                message: 'What is your occupation?',
+                validate: occupationInput => {
+                    if (occupationInput) {
+                        return true;
+                    }
+                    else {
+                        console.log('Please include an occupation ❗');
                         return false;
                     }
                 }
@@ -55,7 +69,7 @@ User Information
                 }
             }
         ]);
-}; */
+};
 
 const promptProjectInfo = userData => {
     console.log(`
@@ -63,10 +77,6 @@ const promptProjectInfo = userData => {
 Project Information
 ===================
     `)
-
-    if (!userData.readme) {
-        userData.readme = [];
-    }
 
     return inquirer
         .prompt([
@@ -187,101 +197,20 @@ Project Information
                     }
                 }
             },
-            {
-                type: 'confirm',
-                name: 'confirmGenReadme',
-                message: 'Do you want to create another README.md?',
-                default: false
-            }
         ])
-        .then((readmeData) => {
-
-            userData.readme.push(readmeData);
-            
-            if (readmeData.confirmGenReadme) {
-                return promptProjectInfo(userData);
-            }
-            else {
-                return userData;
-            }
-
-            // check if responses were receieved
-            /* console.log('MY RESPONSE: ', responses); */
-            // write it out
-/*             const gen = generateMarkdown(readmeData);
-
-            fs.writeFile('README.md', gen, (err) => {
-                if (err) throw err;
-                console.log('readme created!');
-            }) */
+        .then((markdownData) => {
+            const finalData = Object.assign(userData, markdownData);
+            console.log(finalData);
+            return finalData;
         });
 };
 
-/* const sendUserData = userData => {
-    
-    const genMarkdown = generateMarkdown(userData);
-
-    fs.writeFile('README.md', genMarkdown, (err) => {
-        if (err) throw err;
-    })
-} */
-
-const mockup = {
-    name: 'Victor',
-    github: 'VMLujanJr',
-    email: 'vmlujanjr@outlook.com',
-    readme: [
-        {
-        licenseConfirm: true,
-        license: 'MIT',
-        title: 'Amazon',
-        description: 'It delivers stuff!',
-        languageConfirm: true,
-        language: [Array],
-        installation: [Array],
-        usage: 'I send stuff!',
-        contributing: 'Me!',
-        tests: '100 + 100 = 200!',
-        confirmGenReadme: true
-        },
-        {
-        licenseConfirm: true,
-        license: 'APACHE2.0',
-        title: 'Facebank',
-        description: 'We send and collect messages!',
-        languageConfirm: true,
-        language: [Array],
-        installation: [Array],
-        usage: 'Create a Facebank profile!',
-        contributing: 'Someone else!',
-        tests: '1 + 1 = 2',
-        confirmGenReadme: false
-        }
-    ]
-};
-
-const gen = generateMarkdown(mockup);
-
-/* promptUserInfo()
+promptUserInfo()
     .then(promptProjectInfo)
     .then(userData => {
         const sendUserData = generateMarkdown(userData);
 
-        fs.writeFile('./README.md', sendUserData, (err) => {
+        fs.writeFile('./dist/README.md', sendUserData, (err) => {
             if (err) throw new Error(err);
         });
     });
- */
-
-
-// TODO: Create a function to write README file
-/* function writeToFile(fileName, data) {} */
-
-// TODO: Create a function to initialize app
-/* function init() {} */
-
-// Function call to initialize app
-/* init(); */
-
-// `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`
-// ['MIT', 'APACHE2.0', 'GPL3.0', 'BSD3', 'None']
