@@ -1,10 +1,17 @@
-module.exports = responses => {
-    // ..is it array?
-  /* const [title, description, github, installation, usage, contributing, tests] = responses; */
-    // ..or is it object?
-  const {github, email, title, description, installation, usage, contributing, tests} = responses;
-  
-return `
+module.exports = userData => {
+	console.log(userData, 'INSIDE TEMPLATE ❗');
+
+	// destructure userData
+	const {name, email, github, ...markdown} = userData;
+	console.log(name, github, email, markdown);
+
+	// badges
+	/* 
+	https://img.shields.io/badge/License-MIT-blue
+	https://img.shields.io/badge/License-Apache%202.0-blue
+	https://img.shields.io/badge/License-GPL%203.0-blue
+	*/
+/* return 
 # ${title}
 
 ## Description
@@ -25,7 +32,7 @@ You may visit the deployed [website](https://${github}.github.io/${title}/) to t
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [Questions]{#questions}
+  - [Questions](#questions)
 
 ## User Story
 ~~~
@@ -102,5 +109,5 @@ If you have any questions, you may direct them to ${github} using the following 
 | --- | --- |
 | GitHub | <https://github.com/${github}/> |
 | E-mail | <${email}> |
-`;
+`; */
 }
