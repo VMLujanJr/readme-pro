@@ -5,6 +5,9 @@ module.exports = userData => {
 	const {name, email, github, ...markdown} = userData;
 	console.log(name, github, email, markdown);
 
+	const {license, title, description, usage, contributing, tests, ...leftoverData} = markdown.readme[0];
+	console.log(license, title, description, usage, contributing, tests, leftoverData);
+
 	// badges
 	/* 
 	https://img.shields.io/badge/License-MIT-blue

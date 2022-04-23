@@ -4,7 +4,7 @@ const inquirer = require('inquirer'); // include inquirer
 const generateMarkdown = require('./src/md-template'); // include md-template
 
 // TODO: Create an array of questions for user input
-const promptUserInfo = () => {
+/* const promptUserInfo = () => {
     console.log(`
 ================
 User Information
@@ -55,7 +55,7 @@ User Information
                 }
             }
         ]);
-};
+}; */
 
 const promptProjectInfo = userData => {
     console.log(`
@@ -226,7 +226,7 @@ Project Information
     })
 } */
 
-/* const mockup = {
+const mockup = {
     name: 'Victor',
     github: 'VMLujanJr',
     email: 'vmlujanjr@outlook.com',
@@ -258,11 +258,11 @@ Project Information
         confirmGenReadme: false
         }
     ]
-}; */
+};
 
-/* const gen = generateMarkdown(mockup); */
+const gen = generateMarkdown(mockup);
 
-promptUserInfo()
+/* promptUserInfo()
     .then(promptProjectInfo)
     .then(userData => {
         const sendUserData = generateMarkdown(userData);
@@ -271,7 +271,7 @@ promptUserInfo()
             if (err) throw new Error(err);
         });
     });
-
+ */
 
 
 // TODO: Create a function to write README file
