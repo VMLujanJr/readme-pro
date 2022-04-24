@@ -3,7 +3,6 @@ module.exports = userData => {
 
 	// destructure userData
 	const {license, title, description, technologiesConfirm, technologies, installation, usage, contributing, tests, ...user} = userData;
-	console.log(userData);
 
 	// render the license badge
 	const renderBadge = license => {

@@ -62,10 +62,10 @@ THEN I am taken to the corresponding section of the README
 
 **Walkthrough Video: 27%**
 
-- [ ] A walkthrough video that demonstrates the functionality of the README generator must be submitted and a link to the video should be included in your README file
-- [ ] The walkthrough video must demonstrate how a user would invoke the application from the command line
-- [ ] The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-- [ ] The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
+- [x] A walkthrough video that demonstrates the functionality of the README generator must be submitted and a link to the video should be included in your README file
+- [x] The walkthrough video must demonstrate how a user would invoke the application from the command line
+- [x] The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
+- [x] The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
 
 **Technical Acceptance: 40%**
 
@@ -78,7 +78,7 @@ THEN I am taken to the corresponding section of the README
 - [x] Repository follows best practices for file structure and naming conventions
 - [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 - [x] Repository contains multiple descriptive commit messages
-- [ ] Repository contains quality README.md with description and a link to walkthrough video
+- [x] Repository contains quality README.md with description and a link to walkthrough video
 
 ## Installation
 
@@ -87,6 +87,8 @@ Please download the repository from GitHub. You need VSCode installed and some b
 ## Usage
 
 To use the application you must type 'node index' on the command-line to initate the application. You will be prompted for answers.
+
+This is a link to a [video](https://drive.google.com/file/d/1RFPjCUWlJwsdLHD7KIvUQoi7XEvl0CXP/view) showing you how to use the application.
 
 ## Contributing
 
